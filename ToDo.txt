@@ -1,0 +1,54 @@
+
+
+
+
+
+
+
+
+
+  Please Like, Subscribe and comment !! 
+
+
+1) create Project folder "gorm_tutorial"
+     go mod init gorm_tutorial
+     go mod tidy 
+
+1) Import GORM lib 
+    go get -u gorm.io/gorm
+    go get -u gorm.io/driver/mysql 
+
+2) Connect mysql db 
+
+  db, err := 
+   gorm.Open(mysql.Open("root:root.123@/Test_MS"), &gorm.Config{})
+  
+  - Enter invalid user & see if panic error is generated. 
+  - Change to value for valid username to valid value & Print db connection object. 
+   
+  
+3) Lets Create user table into DB
+    - Create struct User has field
+        id int
+        FirstName string 
+        LastName  string 
+        Email string 
+
+4) Confirm table is created in db 
+    
+5) Insert one record in to users table 
+
+6) Update users Record 
+
+7) Delete User Record 
+
+
+
+Next Vdo:  
+- Query Records 
+- Gorm Model 
+- Constrains 
+- Nullable Columns 
+- NullString 
+- Foreign Keys
+- Many to Many Relations 
